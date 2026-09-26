@@ -23,7 +23,7 @@ export const Logo = () => {
                     transition: { duration: 5, repeat: Infinity },
                 }}
             >
-                JA
+                MS
             </MotionLink>
         </div>
     );

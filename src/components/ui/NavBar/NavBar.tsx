@@ -4,7 +4,7 @@ import {
     SunIcon
 } from "@/components";
 import { Logo } from "@/components/Logo";
-import { NAV_LINKS, SOCIAL_LINKS } from "@/config/constants";
+import { NAV_LINKS } from "@/config/constants";
 import { useThemeSwitcher } from "@/hooks/useThemeSwitcher";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -59,19 +59,7 @@ export const NavBar = () => {
                 </nav>
 
                 <nav className="flex flex-wrap items-center justify-center">
-                    {SOCIAL_LINKS.map(({ href, Icon }, i) => (
-                        <motion.a
-                            key={i}
-                            href={href}
-                            target={"_blank"}
-                            rel="noopener noreferrer"
-                            whileHover={{ y: -2 }}
-                            whileTap={{ scale: 0.9 }}
-                            className={`w-6 mx-3 ${href == "https://www.linkedin.com/in/junaid-ali-bhatti-34b680243/" ? "bg-light" : ""} `}
-                        >
-                            {Icon}
-                        </motion.a>
-                    ))}
+                    <a href="mailto:mukarambagri@gmail.com" className="hover:underline underline-offset-4">Contact</a>
 
                     <button
                         onClick={() => setThemeMode(themeMode == "light" ? "dark" : "light")}
@@ -110,20 +98,7 @@ export const NavBar = () => {
                     </nav>
 
                     <nav className="flex flex-wrap items-center justify-center mt-2">
-                        {SOCIAL_LINKS.map(({ href, Icon }, i) => (
-                            <motion.a
-                                key={i}
-                                href={href}
-                                target={"_blank"}
-                                rel="noopener noreferrer"
-                                whileHover={{ y: -2 }}
-                                whileTap={{ scale: 0.9 }}
-                                className={`w-6 sm:mr-3 mx-1 ${href == "https://www.linkedin.com/in/junaid-ali-bhatti-34b680243/" ? "bg-light" : ""} 
-                                ${href == "https://github.com/junaid-1013" ? "rounded-full bg-light dark:bg-dark" : ""}`}
-                            >
-                                {Icon}
-                            </motion.a>
-                        ))}
+                        <a href="mailto:mukarambagri@gmail.com" className="text-light dark:text-dark underline">Contact</a>
                         <button
                             onClick={() => setThemeMode(themeMode == "light" ? "dark" : "light")}
                             className={`ml-3 flex items-center justify-center rounded-full p-1

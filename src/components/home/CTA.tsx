@@ -14,15 +14,15 @@ export const CTA = () => {
                 <div className="flex items-center justify-between w-full flex-col lg:flex-row">
                     <ParticleContainer />
                     <div
-                        className="md:w-1/3 w-full shadow-[0_25px_50px_8px_rgba(0,0,0,0.5)] 
+                        className="w-[min(76vw,340px)] shrink-0 shadow-[0_25px_50px_8px_rgba(0,0,0,0.5)]
                         rounded-full border-3 border-solid border-gray-900"
                     >
                         <Image
-                            src="/images/profile/developer-pic.png"
+                            src="/images/profile/mukarram-shafqat.jpeg"
                             width={70}
                             height={100}
-                            alt="Junaid"
-                            className="w-full h-auto rounded-full md:hidden inline-block lg:inline-block"
+                            alt="Mukarram Shafqat"
+                            className="w-full h-auto rounded-full block"
                             priority
                             sizes="(max-width: 768px) 100vw,(max-width:1200px) 50vw, 50vw"
                         />
@@ -33,17 +33,16 @@ export const CTA = () => {
                             className="!text-left !font-medium sm:!text-base !text-sm"
                         />
                         <AnimatedText
-                            text="Junaid Ali"
+                            text="Mukarram Shafqat"
                             className="xl:!text-6xl lg:!text-left lg:!text-5xl !text-center md:!text-6xl sm:!text-5xl !text-4xl"
                         />
                         <p className="my-4 md:text-base font-medium sm:text-sm text-xs text-justify">
-                            I am a Computer Scientist with over 3 years of experience in various domains.
-                            My expertise includes web and mobile app development, Machine Learning, AI, and computer vision.
-                            I have also contributed to research projects.
+                            I design intuitive digital experiences, build websites, and create engaging video content.
+                            My work spans UI/UX design, WordPress development, and videography.
                         </p>
                         <div className="flex items-center lg:self-start mt-2 self-center">
                             <Link
-                                href="/Junaid's Resume.pdf"
+                                href="/Mukarram Shafqat Resume.pdf"
                                 target={"_blank"}
                                 rel="noopener noreferrer"
                                 className="flex items-center bg-dark text-light md:p-2.5 md:px-6 
@@ -58,7 +57,7 @@ export const CTA = () => {
                                 <LuExternalLink size={20} />
                             </Link>
                             <Link
-                                href="mailto:junaid.ali101452@gmail.com"
+                                href="mailto:mukarambagri@gmail.com"
                                 target={"_blank"}
                                 rel="noopener noreferrer"
                                 className="ml-4 md:text-lg font-medium underline capitalize text-dark dark:text-light text-base"
